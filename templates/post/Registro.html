@@ -1,0 +1,55 @@
+
+<!-- saved from url=(0031)http://127.0.0.1:8000/registro/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./Registro_files/css">
+    <title>Registro</title>
+    <link rel="stylesheet" type="text/css" href="./Registro_files/estilos_registro.css">
+
+    <body bgcolor= #02ac66>
+
+
+
+<style id="__web-inspector-hide-shortcut-style__">
+
+    
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after
+{
+    visibility: hidden !important;
+}
+</style></head><body style="
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(https://fondosmil.com/fondo/17040.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* background: url(https://fondosmil.com/fondo/17040.jpg); */
+">
+        <h1>Registrate</h1>
+        <div class="contenedor">
+
+            <body bgcolor= #02ac66>
+
+        {% csrf_token %} 
+<form action="http://127.0.0.1:8000/registro/" method="POST">
+    {% csrf_token %} 
+    {{form.as_p}}
+    {% csrf_token %} 
+
+    <body bgcolor= #02ac66>
+
+    <button class="btn" type="submit">Registrase</button>   
+    {% csrf_token %} 
+
+    <body bgcolor= #02ac66>
+
+
+<p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+<p>¿Ya tienes una cuenta? <a href="http://127.0.0.1:8000/login/">Iniciar Sesion</a></p>
+{% csrf_token %} 
+
+</form>
+
+
+</div></body></html>

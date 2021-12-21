@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/alta_post.css' %}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+
+<body>
+
+
+
+	<h1>Crear Post En EcoGreen</h1>
+	<div class="contenedor">
+
+			<form method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				{{form.errors}}
+				{{form.as_p}}
+				<input type="submit" name="" value="CREAR">
+			</form>
+{% endblock contenido %}

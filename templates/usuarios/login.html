@@ -1,0 +1,41 @@
+{% load static %}
+<br>
+	<br><br>
+	<br><br>
+
+
+{% block contenido %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+
+<body>
+
+
+
+	<h1>Login</h1>
+	<div class="contenedor">
+
+
+			<form method="POST">{% csrf_token %}
+				{{form.errors}}
+				
+				<div class="input-contenedor">
+				<i class="fas fa-user icon"></i>
+				<input type="text" name="username" placeholder="USUARIO">
+			</div>
+				<div class="input-contenedor">				
+				<i class="fas fa-key icon"></i>
+				<input type="password" name="password" placeholder="PASSWORD">
+			</div>
+				<input type="submit" name="" value="ENVIAR">
+				<p class="red">Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+				<p class="red">¿No tienes una cuenta? <a href="{% url 'registro' %}">Registrate </a></p>
+			</div>
+
+			</form>
+
+		</body>
+	</form>
+		
+
+{% endblock contenido %}
